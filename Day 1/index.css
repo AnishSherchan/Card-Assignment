@@ -1,0 +1,65 @@
+/* Reset some default browser styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 200vh;
+}
+
+/* Style the navigation bar */
+.navbar {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .menu ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
